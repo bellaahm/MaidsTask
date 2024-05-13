@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0 " style="width: 400px; margin: 20px; ">
+        <div [appCustom]="{fgColor:'white',bgColor:'black'}" class="card alert alert-warning">
+            <img style="display:flex; width: 100px; height: 100px;margin-left: 15px; margin-top: 15px;"
+                src={{oneUser.avatar}} class="rounded-circle card-img-top">
+            <div class="card-body">
+                <h5 style="font-size: large;font-weight: bolder;" class="card-title ">{{oneUser.first_name}}&nbsp;{{oneUser.last_name}}</h5>
+                <a routerLink="/users/{{oneUser.id}}"
+                    style="text-decoration: none;font-size: medium;font-weight: bold;color: #02315E;background-color: #68904D;"
+                    class="btn  mt-3">See More</a>
+            </div>
+        </div>
+    </div>
+</div>

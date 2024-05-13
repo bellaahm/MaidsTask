@@ -1,0 +1,6 @@
+<div class="d-flex flex-wrap m-2 align-items-center">
+    @for (usr of Users.data; track usr.id) {
+    <app-user [oneUser]="usr"></app-user>
+    }
+    <mat-paginator style="margin-top: 20px;" [length]="12" [pageSize]="6" (page)="onPageChanged($event.pageIndex + 1)"></mat-paginator>
+</div>
